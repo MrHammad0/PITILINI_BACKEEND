@@ -26,18 +26,18 @@ app.use(cors());
 app.use(bodyParser.json());
 connectDb();
 
-app.use('/api/v3', userRoute);
-app.use('/api/v3', collaboratorRoute);
-app.use('/api/v3', administratorRoute);
-app.use('/api/v3', kycRouter);
-app.use('/api/v3', subscriptionRoutes);
-app.use('/api/v3', TransactionRoute);
-app.use('/api/v3', collaboratorTransactionRoute);
-app.use('/api/v3', administratorTransactionrouter);
-app.use('/api/v3', rechargeRouter);
-app.use('/api/v3', mobRechargeRouter);
-app.use('/api/v3', historyRouter);
-app.use('/api/v3', router);
+app.use('', userRoute);
+app.use('', collaboratorRoute);
+app.use('', administratorRoute);
+app.use('', kycRouter);
+app.use('', subscriptionRoutes);
+app.use('', TransactionRoute);
+app.use('', collaboratorTransactionRoute);
+app.use('', administratorTransactionrouter);
+app.use('', rechargeRouter);
+app.use('', mobRechargeRouter);
+app.use('', historyRouter);
+app.use('', router);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
